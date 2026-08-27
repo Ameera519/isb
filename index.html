@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding Special Lecture Summary</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        vibe: {
+                            50: '#f0f3ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 text-white shadow-lg shadow-indigo-500/20">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-white">Vibe Coding</span>
+                    <span class="text-xs px-2 py-0.5 ml-2 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">Special Lecture</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
+                <a href="#overview" class="hover:text-white transition-colors">Overview</a>
+                <a href="#projects" class="hover:text-white transition-colors">Project Showcase</a>
+                <a href="#methodology" class="hover:text-white transition-colors">Methodology</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="#projects" class="inline-flex items-center justify-center text-xs font-semibold px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-md shadow-indigo-600/30">
+                    Explore Projects
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative py-16 md:py-24 overflow-hidden border-b border-slate-800/50">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-950 to-slate-950 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-indigo-400 mb-6">
+                <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i>
+                <span>Lecture Recap & Core Deliverables</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+                Building Production Tools with <span class="gradient-text">Vibe Coding</span>
+            </h1>
+            
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                A summary of the special lecture showcasing rapid software development using natural language, domain-driven prompt engineering, and live iterative refinement.
+            </p>
+
+            <!-- Metrics -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-4">
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <p class="text-3xl font-extrabold text-indigo-400 mb-1">3</p>
+                    <p class="text-xs text-slate-400 font-medium">Core Projects Built</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <p class="text-3xl font-extrabold text-purple-400 mb-1">100%</p>
+                    <p class="text-xs text-slate-400 font-medium">AI-Assisted Workflow</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center">
+                    <p class="text-3xl font-extrabold text-emerald-400 mb-1">Real-time</p>
+                    <p class="text-xs text-slate-400 font-medium">Data & API Integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <i data-lucide="layers" class="w-6 h-6 text-indigo-400"></i>
+                    Lecture Projects Summary
+                </h2>
+                <p class="text-slate-400 text-sm mt-1">Key applications developed live during the Vibe Coding session</p>
+            </div>
+            <div class="mt-4 md:mt-0 flex gap-2">
+                <button onclick="filterCards('all')" id="filter-all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white">All</button>
+                <button onclick="filterCards('thermal')" id="filter-thermal" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-400 hover:text-white">Thermal Data</button>
+                <button onclick="filterCards('app')" id="filter-app" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-400 hover:text-white">Web Apps</button>
+            </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- CARD 1: Thermal Data Analysis 1 -->
+            <div onclick="window.location.href='p1.html'" class="card-item thermal glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all duration-300 group cursor-pointer">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center gap-1.5">
+                            <i data-lucide="flame" class="w-3.5 h-3.5"></i> Thermal Part 1
+                        </span>
+                        <span class="text-xs text-slate-500 font-mono">Module 01</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white group-hover:text-indigo-300 transition-colors mb-2">
+                        Thermal Data Analysis 1
+                    </h3>
+
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Foundational data processing pipeline for raw infrared sensor logs. Focuses on baseline noise filtering, telemetry normalization, and standard thermal heatmaps.
+                    </p>
+
+                    <!-- Key Features Badge List -->
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <span>Raw Data Ingestion & Cleaning</span>
+                        </div>
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <span>Baseline 2D Heatmap Rendering</span>
+                        </div>
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <span>Threshold Signal Masking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-mono text-slate-500">Tech: Python / NumPy / Matplotlib</span>
+                    <a href="p1.html" onclick="event.stopPropagation();" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-1">
+                        View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2: Thermal Data Analysis 2 -->
+            <div onclick="window.location.href='p2.html'" class="card-item thermal glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-purple-500/50 transition-all duration-300 group cursor-pointer">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center gap-1.5">
+                            <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Thermal Part 2
+                        </span>
+                        <span class="text-xs text-slate-500 font-mono">Module 02</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white group-hover:text-purple-300 transition-colors mb-2">
+                        Thermal Data Analysis 2
+                    </h3>
+
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Advanced spatio-temporal modeling and automated anomaly detection. Incorporates real-time cluster classification and interactive Plotly visualizers.
+                    </p>
+
+                    <!-- Key Features Badge List -->
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                            <span>Automated Hot-Spot Anomaly Detection</span>
+                        </div>
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                            <span>Interactive 3D Surface Plots</span>
+                        </div>
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                            <span>Time-Series Drift Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-mono text-slate-500">Tech: Pandas / Plotly / SciPy</span>
+                    <a href="p2.html" onclick="event.stopPropagation();" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3: Weather App -->
+            <div onclick="window.location.href='p3.html'" class="card-item app glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300 group cursor-pointer">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center gap-1.5">
+                            <i data-lucide="cloud-sun" class="w-3.5 h-3.5"></i> Live Web App
+                        </span>
+                        <span class="text-xs text-slate-500 font-mono">Module 03</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white group-hover:text-blue-300 transition-colors mb-2">
+                        Weather Application
+                    </h3>
+
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        A full-stack, responsive weather application generated rapidly via Vibe Coding. Features real-time location lookup, dynamic weather themes, and multi-day forecasts.
+                    </p>
+
+                    <!-- Key Features Badge List -->
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span>Live OpenWeather API Integration</span>
+                        </div>
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span>Dynamic Atmospheric UI Themes</span>
+                        </div>
+                        <div class="flex items-center text-xs text-slate-300 gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span>7-Day Interactive Forecast Widgets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-mono text-slate-500">Tech: HTML / Tailwind / JS API</span>
+                    <a href="p3.html" onclick="event.stopPropagation();" class="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1">
+                        View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-16 bg-slate-900/50 border-t border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">The "Vibe Coding" Workflow</h2>
+                <p class="text-slate-400 text-sm mt-2">How natural language prompts turned lecture concepts into functional applications in minutes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl bg-slate-950 border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold font-mono mb-4">01</div>
+                    <h4 class="text-base font-bold text-white mb-2">Intent-Driven Prompts</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Rather than writing line-by-line code, participants defined requirements high-level: input structures, expected visual outputs, and domain constraints.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-950 border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center font-bold font-mono mb-4">02</div>
+                    <h4 class="text-base font-bold text-white mb-2">Iterative Refinement</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Inspecting live code outputs on the fly, feeding error logs back into the AI assistant, and tuning mathematical parameters seamlessly.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-950 border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center font-bold font-mono mb-4">03</div>
+                    <h4 class="text-base font-bold text-white mb-2">Instant Deployment</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Bundling scripts and single-file frontends ready for immediate client preview and automated artifact generation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+        <div class="glass-card max-w-2xl w-full rounded-2xl p-6 sm:p-8 relative border border-slate-700 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div id="modal-content">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>© 2026 Vibe Coding Special Lecture | Interactive Deliverables Summary</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
+
+        // Filter functionality
+        function filterCards(category) {
+            const cards = document.querySelectorAll('.card-item');
+            const btns = document.querySelectorAll('.filter-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('bg-slate-900', 'text-slate-400', 'border', 'border-slate-800');
+            });
+
+            const activeBtn = document.getElementById('filter-' + category);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-slate-900', 'text-slate-400', 'border', 'border-slate-800');
+                activeBtn.classList.add('bg-indigo-600', 'text-white');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'flex';
+                } else {
+                    if (card.classList.contains(category)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Modal Content Data
+        const modalDetails = {
+            thermal1: {
+                title: "Thermal Data Analysis 1",
+                badge: "Foundational Processing",
+                color: "amber",
+                description: "In the first part of the thermal analysis series, the lecture covered reading raw array sensor data from thermal cameras, filtering background ambient noise, and generating standardized heatmaps.",
+                promptUsed: "Write a Python processing pipeline that ingests raw float32 thermal array logs, applies a Gaussian blur to smooth sensor noise, and renders a normalized matrix heatmap.",
+                takeaways: [
+                    "Matrix normalization for sensor drift calibration",
+                    "Gaussian filtering techniques for thermal image smoothing",
+                    "Configuring sequential data pipelines via Vibe prompts"
+                ]
+            },
+            thermal2: {
+                title: "Thermal Data Analysis 2",
+                badge: "Advanced Spatial Analytics",
+                color: "purple",
+                description: "Building upon Part 1, Part 2 focused on automated anomaly detection, locating localized thermal spikes (hot-spots), and interactive 3D topography rendering.",
+                promptUsed: "Enhance the previous thermal pipeline to detect regions exceeding 85°C. Contour these regions with red boundary boxes and produce an interactive 3D plot using Plotly.",
+                takeaways: [
+                    "Spatial DBSCAN clustering for hardware hot-spot isolation",
+                    "3D mesh visual representation of temperature gradients",
+                    "Exporting analytical summary reports automatically"
+                ]
+            },
+            weather: {
+                title: "Weather Application",
+                badge: "Rapid Web Prototyping",
+                color: "blue",
+                description: "A showcase of building a user-facing client application in a single prompt loop. Integrates weather telemetry API, city search, dynamic background themes based on weather state, and forecast widgets.",
+                promptUsed: "Build a modern dark-mode weather dashboard with HTML, Tailwind CSS, and Vanilla JavaScript. Fetch live data from OpenWeather API, show hourly forecasts, and transition background colors based on condition.",
+                takeaways: [
+                    "Single-file component structuring for rapid preview",
+                    "Asynchronous API fetch and error fallback handling",
+                    "Dynamic CSS utility state mapping"
+                ]
+            }
+        };
+
+        function openModal(key) {
+            const data = modalDetails[key];
+            if (!data) return;
+
+            const modalContent = document.getElementById('modal-content');
+            
+            var takeawaysList = "";
+            for (var i = 0; i < data.takeaways.length; i++) {
+                takeawaysList += '<li class="flex items-start gap-2 text-slate-300 text-xs"><i data-lucide="check" class="w-4 h-4 text-indigo-400 shrink-0 mt-0.5"></i><span>' + data.takeaways[i] + '</span></li>';
+            }
+
+            modalContent.innerHTML = 
+                '<div class="mb-4 flex items-center gap-2">' +
+                    '<span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">' + data.badge + '</span>' +
+                '</div>' +
+                '<h3 class="text-2xl font-bold text-white mb-3">' + data.title + '</h3>' +
+                '<p class="text-slate-300 text-sm mb-6 leading-relaxed">' + data.description + '</p>' +
+                
+                '<div class="mb-6 p-4 rounded-xl bg-slate-900 border border-slate-800">' +
+                    '<p class="text-xs font-mono text-indigo-400 mb-1 font-semibold">Vibe Prompt Executed:</p>' +
+                    '<p class="text-xs text-slate-400 font-mono italic">"' + data.promptUsed + '"</p>' +
+                '</div>' +
+
+                '<div class="mb-6">' +
+                    '<h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Key Learnings & Output</h4>' +
+                    '<ul class="space-y-2">' + takeawaysList + '</ul>' +
+                '</div>' +
+
+                '<div class="flex justify-end">' +
+                    '<button onclick="closeModal()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold">Close Summary</button>' +
+                '</div>';
+
+            document.getElementById('project-modal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
